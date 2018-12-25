@@ -1,0 +1,4 @@
+#pip安装pymysql:python操作mysql#
+*pip3.6 install pymysql
+#pip安装redis:python操作redis#
+*pip install redis
