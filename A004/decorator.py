@@ -47,15 +47,18 @@ test2()
 
 def cc(func):
     def demo(*args,**kwargs):
-        func(*args,**kwargs)
+        res=func(*args,**kwargs)
         print("this is ok")
         print("这是第三个实例结束符".center(50, "#"))
+        return  res
     return demo
 @cc
 def test3(name,age):
     info="name:%s,age:%d" %(name,age)
     print(info)
+    return  "this is return"
 
+<<<<<<< HEAD
 test3("james",23)
 
 "################"
@@ -107,3 +110,6 @@ def blog():
 index_pages()
 print(home("kebe"))
 blog()
+=======
+print(test3("james",23))
+>>>>>>> ad1703bfde9f2554e20d9d15e5de4e62fb58d167
